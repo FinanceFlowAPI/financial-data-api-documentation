@@ -88,14 +88,14 @@ GET https://financeflowapi.com/api/v1/index-spot?api_key=YOUR_API_KEY&benchmark=
 
 ## Why Choose FinanceFlowAPI?
 - **Global Index Coverage**: Access data on stock indices from Europe, Asia, the Americas, and beyond.
-- **Affordable Plans**: Start with our [free plan](https://financeflowapi.com/create-account/) (200 requests/month) or upgrade to Standard ($10.99/month) or Premium ($20.99/month) for more data.
+- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for more data.
 - **Seamless Integration**: Comprehensive [documentation](https://financeflowapi.com/api_documentation/) with code samples.
 - **Future-Proof**: Upcoming endpoints include historical candles, financial statements, and SEC data.
 
 ## Get Started
 1. [Sign up](https://financeflowapi.com/create-account/) to get your API key.
 2. Explore the [Stock Index Spot API documentation](https://financeflowapi.com/api_documentation/) or this repository for details.
-3. Test the endpoints with our free plan or unlock full access with a paid plan.
+3. Test the endpoints with our Test plan or unlock full access with a paid plan.
 
 Star this repository to support FinanceFlowAPI and stay updated on new features! For questions, open an [issue](https://github.com/FinanceFlowAPI/api-documentation/issues) or contact [support@financeflowapi.com](mailto:support@financeflowapi.com).
 

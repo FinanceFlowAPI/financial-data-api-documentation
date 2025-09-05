@@ -58,7 +58,7 @@ GET https://financeflowapi.com/api/v1/world-indicators?api_key=YOUR_API_KEY&coun
 ## Why Choose FinanceFlowAPI?
 
 - **Global Coverage**: Access economic indicators from multiple countries, including Germany, the US, and more.  
-- **Affordable Plans**: Start with our free plan (200 requests/month) or upgrade to Standard ($10.99/month) or Premium ($20.99/month) for more data.  
+- **Affordable Plans**: Start with our Test plan (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for more data.  
 - **Seamless Integration**: Comprehensive documentation with code samples.  
 - **Future-Proof**: Upcoming endpoints include historical candles, financial statements, and SEC data.  
 
@@ -68,7 +68,7 @@ GET https://financeflowapi.com/api/v1/world-indicators?api_key=YOUR_API_KEY&coun
 
 - Sign up to get your API key.  
 - Explore the World Economic Indicators API documentation or this repository for details.  
-- Test the endpoint with our free plan or unlock full access with a paid plan.  
+- Test the endpoint with our Test plan or unlock full access with a paid plan.  
 
 ⭐ Star this repository to support FinanceFlowAPI and stay updated on new features! For questions, open an issue or contact [support@financeflowapi.com](mailto:support@financeflowapi.com).
 

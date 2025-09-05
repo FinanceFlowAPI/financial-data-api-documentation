@@ -18,9 +18,9 @@ Whether you're building trading platforms, market analysis tools, or financial d
 ## 🚀 Why FinanceFlowAPI?
 
 - **Comprehensive Data**: Real-time and historical datasets for commodities, bonds, stocks, and more.
-- **Affordable Pricing**: Free plan with 200 requests/month. Paid plans start at **$10.99/month**.
+- **Affordable Pricing**: Test plan with 200 requests/month, only 5$. Paid plans start at **$25/month**.
 - **Easy Integration**: Well-documented with examples in Python, JavaScript, and more.
-- **Future-Ready**: Upcoming endpoints include historical candles, financial statements, and SEC data.
+- **Future-Ready**: Upcoming endpoints include SEC data.
 
 ---
 
@@ -30,7 +30,7 @@ Whether you're building trading platforms, market analysis tools, or financial d
 
 2. **Explore Docs**: Visit API Documentation or check the `/docs` folder in this repository.
 
-3. **Test the API**: Try endpoints like `/commodity-spot` with the free plan (limited access to some endpoints, e.g., no `/ticker-spot`).
+3. **Test the API**: Try endpoints like `/commodity-spot` with the Test plan (limited access to some endpoints, e.g., no `/ticker-spot`).
 
 4. **Integrate**: Use the example below:
 
@@ -80,11 +80,11 @@ See the official documentation for the full list.
 
 ## 💰 Pricing Plans
 
-| Plan | Price | Requests/Month | Historical Data | Notes |
-| --- | --- | --- | --- | --- |
-| Free | $0 | 200 | 365 days | Access to most endpoints  |
-| Standard | $10.99/month | 10,000 | 180 days | Normally $15/month |
-| Premium | $20.99/month | 100,000 | Unlimited | Normally $30/month, full access |
+|   Plan    |   Price   | Requests/Month | Historical Data |
+|    ---    |    ---    |      ---       |      ---        | 
+| Test      | $5/month  | 200            | 365 days        |
+| Standard  | $25/month | 10,000         | 180 days        |
+| Premium   | $50/month | 100,000        | Unlimited       | 
 
 📌 See the pricing page for details.
 

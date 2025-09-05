@@ -125,7 +125,7 @@ GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&frequency
 ## 🚀 Why Choose FinanceFlowAPI?
 
 ✅ **Global Coverage** – US, EU, Asia  
-💸 **Affordable Plans** – Free (200 req/month), Standard ($10.99), Premium ($20.99)  
+💸 **Affordable Plans** – Test (200 req/month, only 5$), Standard ($25), Premium ($50)  
 📦 **Clean JSON Format** – Ready for frontends, Python, Excel, JS, etc.  
 📚 **Great Documentation** – Easy-to-use examples and clear endpoints  
 🔮 **More Coming Soon** – SEC data, bond candles, and macro indicators
@@ -135,7 +135,7 @@ GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&frequency
 ## 🧑‍💻 Get Started
 
 1. **[Sign up](https://financeflowapi.com/create-account)** to get your API key  
-2. **Test the endpoints** using the Free plan  
+2. **Test the endpoints** using the Test plan  
 3. **Upgrade anytime** for more requests & deeper historical data  
 4. **[View full docs](https://financeflowapi.com/api_documentation)** for more endpoints
 

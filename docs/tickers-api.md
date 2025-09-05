@@ -97,14 +97,14 @@ GET https://financeflowapi.com/api/v1/ticker-spot?api_key=YOUR_API_KEY&ticker=AA
 
 ## Why Choose FinanceFlowAPI?
 - **Unmatched Scale**: Access **511,000+ stock tickers**, covering global markets and popular stocks like **AAPL**, **TSLA**, **GOOGL**, **MSFT**, and **AMZN**, outpacing competitors.
-- **Affordable Plans**: Start with our [free plan](https://financeflowapi.com/create-account/) (200 requests/month) or upgrade to Standard ($10.99/month) or Premium ($20.99/month) for extensive **real-time stock data**.
+- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for extensive **real-time stock data**.
 - **Seamless Integration**: Comprehensive [documentation](https://financeflowapi.com/api_documentation/) with code samples for this **financial data API**.
 - **Future-Proof**: Upcoming endpoints include historical candles, financial statements, and SEC data for deeper market insights.
 
 ## Get Started
 1. [Sign up](https://financeflowapi.com/create-account/) to get your API key and dive into the **stock tickers API**.
 2. Explore the [FinanceFlowAPI documentation](https://financeflowapi.com/api_documentation/) or this repository for details.
-3. Test endpoints like `/ticker-spot` for **AAPL** or **TSLA** with our free plan, or unlock full access with a paid plan.
+3. Test endpoints like `/ticker-spot` for **AAPL** or **TSLA** with our Test plan, or unlock full access with a paid plan.
 
 Star this repository to support FinanceFlowAPI and stay updated on new features! For questions, open an [issue](https://github.com/FinanceFlowAPI/api-documentation/issues) or contact [support@financeflowapi.com](mailto:support@financeflowapi.com).
 

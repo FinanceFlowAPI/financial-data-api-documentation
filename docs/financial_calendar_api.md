@@ -70,7 +70,7 @@ GET https://financeflowapi.com/api/v1/calendar-catalog?api_key=YOUR_API_KEY
 | Parameter   | Type   | Required | Description                              |
 |-------------|--------|----------|------------------------------------------|
 | api_key     | string | Yes      | Your unique API key.                     |
-| country     | string | No       | Full country name (e.g., "United States"). |
+| country     | string | Yes      | Full country name (e.g.,"United States") |
 | date_from   | string | No       | Start date in YYYY-MM-DD format.         |
 | date_to     | string | No       | End date in YYYY-MM-DD format.           |
 
@@ -128,9 +128,9 @@ GET https://financeflowapi.com/api/v1/financial-calendar?api_key=YOUR_API_KEY&co
 ## ✅ Why Choose FinanceFlowAPI?
 
 - 🌍 **Global Event Coverage:** Access economic event data from countries worldwide.  
-- 💸 **Affordable Plans:** Start with our free plan (200 requests/month) or upgrade to Standard ($10.99/month) or Premium ($20.99/month).  
+- 💸 **Affordable Plans:** Start with our Test plan (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month).  
 - 🔌 **Seamless Integration:** Comprehensive documentation with code samples.  
-- 🔮 **Future-Proof:** Upcoming endpoints include historical candles, financial statements, and SEC data.
+- 🔮 **Future-Proof:** Upcoming endpoints include SEC data.
 
 ---
 
@@ -138,7 +138,7 @@ GET https://financeflowapi.com/api/v1/financial-calendar?api_key=YOUR_API_KEY&co
 
 1. [Sign up](https://financeflowapi.com/api_documentation) to get your API key.
 2. Explore the Financial Calendar API documentation or this repository for details.
-3. Test the endpoints with our free plan or unlock full access with a paid plan.
+3. Test the endpoints with our Test plan or unlock full access with a paid plan.
 
 ---
 

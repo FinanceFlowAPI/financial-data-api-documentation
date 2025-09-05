@@ -125,14 +125,14 @@ GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&nam
 
 ## Why Choose FinanceFlowAPI?
 - **Unmatched Coverage**: Access **511,000+ tickers**, including commodities, stocks, bonds, and more, surpassing competitors like Finnhub or FMP.
-- **Affordable Plans**: Start with our [free plan](https://financeflowapi.com/create-account/) (200 requests/month) or upgrade to Standard ($10.99/month) or Premium ($20.99/month) for extensive data access.
+- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for extensive data access.
 - **Seamless Integration**: Comprehensive [documentation](https://financeflowapi.com/api_documentation/) with clear examples.
-- **Future-Ready**: Upcoming endpoints include historical candles, financial statements (balance sheet, cash flow), and SEC data (insider transactions).
+- **Future-Ready**: Upcoming endpoints include SEC data (insider transactions).
 
 ## Get Started
 1. [Sign up](https://financeflowapi.com/create-account/) to get your API key.
 2. Explore the [Commodity API documentation](https://financeflowapi.com/api_documentation/) or this repository for details.
-3. Test the endpoints with our free plan or unlock real-time data with a paid plan.
+3. Test the endpoints with our Test plan or unlock real-time data with a paid plan.
 
 Star this repository to support FinanceFlowAPI and stay updated on new features! For questions, open an [issue](https://github.com/FinanceFlowAPI/api-documentation/issues) or contact [support@financeflowapi.com](mailto:support@financeflowapi.com).
 

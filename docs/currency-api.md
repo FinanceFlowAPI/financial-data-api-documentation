@@ -12,7 +12,7 @@ All endpoints follow this base URL.
 
 ## Authentication
 
-All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) to get a free API key with 200 requests per month. Higher limits are available with Standard ($10.99/month) or Premium ($20.99/month) plans.
+All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) to get a Test API key with 200 requests per month, only 5$. Higher limits are available with Standard ($25/month) or Premium ($50/month) plans.
 
 ## Endpoints
 
@@ -213,12 +213,12 @@ print_r($data);
 
 ## Rate Limits
 
-- **Free Plan:** 200 requests per month.
-- **Standard Plan:** $10.99/month (higher limits).
-- **Premium Plan:** $20.99/month (highest limits).
+- **Test Plan:** 200 requests per month, only 5$.
+- **Standard Plan:** $25/month (higher limits).
+- **Premium Plan:** $50/month (highest limits).
 
 Check your rate limits in your account dashboard at [FinanceFlowAPI My Account](https://financeflowapi.com/my-account/).
 
 ## Conclusion
 
-The **Currency API** empowers developers with real-time currency pair data for forex trading, financial analysis, and more. Integrate this API to access exchange rates for thousands of currency pairs with updates every 1-3 minutes. Get started with a free API key at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) and explore our open-source documentation on [GitHub](https://github.com/FinanceFlowAPI/financial-data-api-documentation). Star our repo to stay updated with the latest financial data API features!
+The **Currency API** empowers developers with real-time currency pair data for forex trading, financial analysis, and more. Integrate this API to access exchange rates for thousands of currency pairs with updates every 1 minutes. Get started with a Test API key at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) and explore our open-source documentation on [GitHub](https://github.com/FinanceFlowAPI/financial-data-api-documentation). Star our repo to stay updated with the latest financial data API features!

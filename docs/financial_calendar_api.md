@@ -121,7 +121,7 @@ GET https://financeflowapi.com/api/v1/financial-calendar?api_key=YOUR_API_KEY&co
 **`economicImpact` values explained:**  
 - `"Standard"` – Minor expected influence  
 - `"Moderate"` – Moderate market sensitivity  
-- `"High"` – Likely to cause notable market movements  
+- `"Major"` – Likely to cause notable market movements  
 
 ---
 

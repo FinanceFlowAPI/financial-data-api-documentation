@@ -1,5 +1,5 @@
 
-# 🇺🇸 Government Bonds API — Real-Time & Historical Bond Yields
+# 🇺🇸 Government Bonds API: Real-Time & Historical Bond Yields
 
 The **Government Bonds API** from [FinanceFlowAPI](https://financeflowapi.com) provides real-time and historical bond yield data for major economies including the **United States**, **Germany**, **Australia**, and more.
 
@@ -9,7 +9,7 @@ The **Government Bonds API** from [FinanceFlowAPI](https://financeflowapi.com) p
 - Research platforms
 - Fintech & macroeconomic tools
 
-Integrate seamless, accurate bond yield data into your dashboards or apps with **just a few lines of code**.
+Integrate accurate bond yield data into your dashboards or apps with **just a few lines of code**.
 
 ---
 
@@ -25,13 +25,13 @@ https://financeflowapi.com/api/v1/
 
 ### 1. ✅ Supported Countries List
 
-Retrieve a list of countries with available bond data.
+Retrieve a list of the 54 countries with available bond data, plus the maturities (types) supported for each.
 
 **Endpoint:**  
 `GET /bonds-catalog`
 
 **Request Parameters:**
-- `api_key` (string, required) – Your API key.
+- `api_key` (string, required): Your API key.
 
 **Example:**
 ```
@@ -42,9 +42,11 @@ GET /bonds-catalog?api_key=YOUR_API_KEY
 ```json
 {
   "success": true,
+  "code": 200,
+  "message": "OK",
   "data": [
-    { "bond_country": "australia" },
-    { "bond_country": "austria" }
+    { "country": "Austria", "supported_types": ["10y"] },
+    { "country": "Australia", "supported_types": ["10y", "20y", "2y", "30y", "3y", "52w", "5y", "7y"] }
   ]
 }
 ```
@@ -60,9 +62,9 @@ Fetch real-time yields and performance for a given bond type and country.
 
 **Request Parameters:**
 - `api_key` (string, required)
-- `region` (string, optional) — e.g. "europe"
-- `country` (string, required) — e.g. "united_states"
-- `type` (string, required) — e.g. "10y", "6m", "30ytips"
+- `region` (string, optional): e.g. "europe". Alternative to `country`.
+- `country` (string, required unless `region` is used): e.g. "united_states"
+- `type` (string, optional, defaults to "10y"): e.g. "10y", "6m", "30ytips"
 
 **Example:**
 ```
@@ -72,17 +74,19 @@ GET /bonds-spot?api_key=YOUR_API_KEY&country=united_states&type=10y
 **Response:**
 ```json
 {
+  "success": true,
+  "code": 200,
+  "message": "OK",
   "data": [
     {
       "bond_country": "united states",
-      "bond_yield": 4.215,
+      "bond_yield": 4.656,
       "bond_type": "10Y",
-      "daily_bond_change": "0.0500",
-      "weekly_bond_change_percent": "-0.22%",
-      "monthly_bond_change_percent": "-0.33%",
-      "ytd_bond_value_change": "-0.36%",
-      "yearly_bond_change_percent": "-0.04%",
-      "last_updated": "2024-09-11 21:22:12"
+      "daily_bond_change": "0.0220",
+      "weekly_bond_change_percent": "0.01%",
+      "monthly_bond_change_percent": "0.00%",
+      "yearly_bond_change_percent": "0.42%",
+      "last_updated": "2026-08-26 15:10:46"
     }
   ]
 }
@@ -99,23 +103,26 @@ Get historical yields within a selected period (max 100 days).
 
 **Request Parameters:**
 - `api_key` (string, required)
-- `frequency` (string, required) — `day` or `month`
-- `country` (string, required) — e.g. "germany"
-- `type` (string, required) — e.g. "10y"
-- `date_from` (optional) — Format: YYYY-MM-DD
+- `interval` (string, required): `day` or `month`
+- `country` (string, required): e.g. "germany"
+- `type` (string, required): e.g. "10y"
+- `date_from` (optional): Format: YYYY-MM-DD
 - `date_to` (optional)
 
 **Example:**
 ```
-GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&frequency=day&date_from=2025-01-01&date_to=2025-01-31
+GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&interval=day&date_from=2026-08-01&date_to=2026-08-10
 ```
 
 **Response:**
 ```json
 {
+  "success": true,
+  "code": 200,
+  "message": "OK",
   "data": [
-    { "date": "2025-01-31", "bond_type": "10y", "price": 4.541 },
-    { "date": "2025-01-30", "bond_type": "10y", "price": 4.519 }
+    { "date": "2026-08-10", "bond_type": "10Y", "yield": 4.713 },
+    { "date": "2026-08-07", "bond_type": "10Y", "yield": 4.651 }
   ]
 }
 ```
@@ -124,11 +131,11 @@ GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&frequency
 
 ## 🚀 Why Choose FinanceFlowAPI?
 
-✅ **Global Coverage** – US, EU, Asia  
-💸 **Affordable Plans** – Test (200 req/month, only 5$), Standard ($25), Premium ($50)  
-📦 **Clean JSON Format** – Ready for frontends, Python, Excel, JS, etc.  
-📚 **Great Documentation** – Easy-to-use examples and clear endpoints  
-🔮 **More Coming Soon** – SEC data, bond candles, and macro indicators
+✅ **Global Coverage**: 54 countries across the US, EU, and Asia  
+💸 **Affordable Plans**: Test ($5/month, 200 requests), Standard ($25/month), Premium ($50/month)  
+📦 **Clean JSON Format**: Ready for frontends, Python, Excel, JS, etc.  
+📚 **Great Documentation**: Easy-to-use examples and clear endpoints  
+🔮 **More Coming Soon**: SEC data and additional macro indicators
 
 ---
 
@@ -149,4 +156,4 @@ GET /bonds-history?api_key=YOUR_API_KEY&country=united_states&type=10y&frequency
 
 ---
 
-**FinanceFlowAPI** — Empowering fintech with real-time and historical financial data.
+**FinanceFlowAPI**: Empowering fintech with real-time and historical financial data.

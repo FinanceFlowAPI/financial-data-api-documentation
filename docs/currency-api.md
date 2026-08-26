@@ -12,7 +12,7 @@ All endpoints follow this base URL.
 
 ## Authentication
 
-All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) to get a Test API key with 200 requests per month, only 5$. Higher limits are available with Standard ($25/month) or Premium ($50/month) plans.
+All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) to get a Test API key ($5/month, 200 requests). Higher limits are available with Standard ($25/month) or Premium ($50/month) plans.
 
 ## Endpoints
 
@@ -20,7 +20,7 @@ All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Accoun
 
 **Endpoint:** `/currency-catalog`
 
-**Description:** Retrieves a list of all supported currency pairs or filters pairs by a specific currency (e.g., USD, EUR). Perfect for discovering available forex pairs for trading or analysis.
+**Description:** Retrieves a list of all 628 supported currency pairs across 127 currencies, or filters pairs by a specific currency (e.g., USD, EUR). Useful for discovering available forex pairs for trading or analysis.
 
 **HTTP Method:** GET
 
@@ -80,6 +80,8 @@ All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Accoun
 | `pair`      | String | No       | Currency pair (e.g., "CHF/EUR"). Use either `pair` or `currency`. |
 | `currency`  | String | No       | Currency code to retrieve all related pairs (e.g., "USD").   |
 
+**Response fields:** `price`, `open`, `bid`, `ask`, `high`, `low`, `chg`, `chg_percent` (plain numeric string, no `%` sign), `trading_status` (`open` or `close`), `last_update`.
+
 **Note:** You must provide either `pair` or `currency`, but not both.
 
 **Request Examples:**
@@ -110,13 +112,16 @@ All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Accoun
     "data": [
         {
             "pair": "CHF/EUR",
-            "bid": "1.0600",
-            "ask": "1.0614",
-            "high": "1.0660",
-            "low": "1.0596",
-            "chg": "-0.0046",
-            "chg_percent": "-0.43%",
-            "last_update": "2025-06-21 23:59:51"
+            "price": "1.0652",
+            "open": "1.0688",
+            "bid": "1.0651",
+            "ask": "1.0653",
+            "high": "1.0692",
+            "low": "1.0651",
+            "chg": "-0.0036",
+            "chg_percent": "-0.34",
+            "trading_status": "open",
+            "last_update": "2026-08-26 14:58:59"
         }
     ]
 }
@@ -136,33 +141,29 @@ All requests require a valid `api_key`. Sign up at [FinanceFlowAPI Create Accoun
     "data": [
         {
             "pair": "ADA/USD",
+            "price": "0.5577",
+            "open": "0.5569",
             "bid": "0.5576",
             "ask": "0.5578",
             "high": "0.5578",
             "low": "0.5571",
             "chg": "0.0007",
-            "chg_percent": "0.13%",
-            "last_update": "2025-06-22 00:00:30"
+            "chg_percent": "0.13",
+            "trading_status": "open",
+            "last_update": "2026-08-26 00:00:30"
         },
         {
             "pair": "AED/USD",
+            "price": "0.2723",
+            "open": "0.2723",
             "bid": "0.2723",
             "ask": "0.2723",
             "high": "0.2723",
             "low": "0.2722",
             "chg": "0.0000",
-            "chg_percent": "0%",
-            "last_update": "2025-06-21 23:59:15"
-        },
-        {
-            "pair": "ALG/USD",
-            "bid": "0.1632",
-            "ask": "0.1638",
-            "high": "0.1691",
-            "low": "0.1572",
-            "chg": "-0.0046",
-            "chg_percent": "-2.75%",
-            "last_update": "2025-06-22 00:00:30"
+            "chg_percent": "0",
+            "trading_status": "open",
+            "last_update": "2026-08-25 23:59:15"
         },
         ...
     ]
@@ -213,7 +214,7 @@ print_r($data);
 
 ## Rate Limits
 
-- **Test Plan:** 200 requests per month, only 5$.
+- **Test Plan:** $5/month, 200 requests per month.
 - **Standard Plan:** $25/month (higher limits).
 - **Premium Plan:** $50/month (highest limits).
 
@@ -221,4 +222,4 @@ Check your rate limits in your account dashboard at [FinanceFlowAPI My Account](
 
 ## Conclusion
 
-The **Currency API** empowers developers with real-time currency pair data for forex trading, financial analysis, and more. Integrate this API to access exchange rates for thousands of currency pairs with updates every 1 minutes. Get started with a Test API key at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) and explore our open-source documentation on [GitHub](https://github.com/FinanceFlowAPI/financial-data-api-documentation). Star our repo to stay updated with the latest financial data API features!
+The **Currency API** empowers developers with real-time currency pair data for forex trading, financial analysis, and more. Integrate this API to access exchange rates for 628 currency pairs across 127 currencies, with updates every 1 minutes. Get started with a Test API key at [FinanceFlowAPI Create Account](https://financeflowapi.com/create-account/) and explore our open-source documentation on [GitHub](https://github.com/FinanceFlowAPI/financial-data-api-documentation). Star our repo to stay updated with the latest financial data API features!

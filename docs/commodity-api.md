@@ -1,6 +1,6 @@
 # Commodity API - Real-Time and Historical Commodity Data with FinanceFlowAPI
 
-The **Commodity API** from [FinanceFlowAPI](https://financeflowapi.com) provides real-time and historical market data for commodities like gold, oil, coal, and agricultural products. Perfect for financial analysts, traders, and developers, this API delivers up-to-date commodity prices and trends to power trading platforms, market analysis tools, and financial dashboards. With a massive database of **511,000+ tickers**, FinanceFlowAPI offers unparalleled coverage for your fintech needs.
+The **Commodity API** from [FinanceFlowAPI](https://financeflowapi.com) provides real-time and historical market data for **102 commodities**, including gold, oil, coal, agricultural products, and freight/commodity indices. Built for financial analysts, traders, and developers, this API delivers up-to-date commodity prices and trends to power trading platforms, market analysis tools, and financial dashboards.
 
 [Sign up](https://financeflowapi.com/create-account/) to get started and explore the full API at [financeflowapi.com/api_documentation](https://financeflowapi.com/api_documentation).
 
@@ -14,7 +14,7 @@ All Commodity API endpoints follow this base URL.
 
 ### 1. Supported Commodities List
 - **Endpoint**: `/commodity-catalog`
-- **Description**: Retrieves a complete list of supported commodities available in the API, such as aluminum, barley, coal, and gold.
+- **Description**: Retrieves the complete list of 102 supported commodities available in the API, such as aluminum, barley, coal, and gold.
 
 #### Request Parameters
 - `api_key` (string, required): Your unique API key. [Get yours](https://financeflowapi.com/create-account/).
@@ -78,7 +78,7 @@ GET https://financeflowapi.com/api/v1/commodity-spot?api_key=YOUR_API_KEY&name=C
         "monthly_change_percent": "-12.99%",
         "ytd_change_percent": "-20.08%",
         "yearly_change_percent": "-23.59%",
-        "last_updated": "2024-09-20"
+        "last_updated": "2026-08-26"
     }
 }
 ```
@@ -96,7 +96,7 @@ GET https://financeflowapi.com/api/v1/commodity-spot?api_key=YOUR_API_KEY&name=C
 
 #### Request Example
 ```
-GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&name=Gold&interval=day&date_from=2025-01-01&date_to=2025-01-31
+GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&name=Gold&interval=day&date_from=2026-08-01&date_to=2026-08-05
 ```
 
 #### Response Example
@@ -111,12 +111,12 @@ GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&nam
     },
     "data": [
         {
-            "date": "2025-01-31",
-            "price": 2797.16
+            "date": "2026-08-05",
+            "price": 4247.4
         },
         {
-            "date": "2025-01-30",
-            "price": 2796.18
+            "date": "2026-08-04",
+            "price": 4077.86
         },
         ...
     ]
@@ -124,9 +124,9 @@ GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&nam
 ```
 
 ## Why Choose FinanceFlowAPI?
-- **Unmatched Coverage**: Access **511,000+ tickers**, including commodities, stocks, bonds, and more, surpassing competitors like Finnhub or FMP.
-- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for extensive data access.
-- **Seamless Integration**: Comprehensive [documentation](https://financeflowapi.com/api_documentation/) with clear examples.
+- **Broad Commodity Coverage**: 102 commodities across metals, energy, agriculture, and freight/commodity indices, alongside our stock, bond, and currency data.
+- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) ($5/month, 200 requests) or upgrade to Standard ($25/month) or Premium ($50/month) for extensive data access.
+- **Clear Documentation**: [Documentation](https://financeflowapi.com/api_documentation/) with request/response examples for every endpoint.
 - **Future-Ready**: Upcoming endpoints include SEC data (insider transactions).
 
 ## Get Started
@@ -137,4 +137,4 @@ GET https://financeflowapi.com/api/v1/commodity-history?api_key=YOUR_API_KEY&nam
 Star this repository to support FinanceFlowAPI and stay updated on new features! For questions, open an [issue](https://github.com/FinanceFlowAPI/api-documentation/issues) or contact [support@financeflowapi.com](mailto:support@financeflowapi.com).
 
 ---
-*FinanceFlowAPI: Empowering fintech with 511,000+ tickers and real-time data.*
+*FinanceFlowAPI: Empowering fintech with real-time and historical commodity data.*

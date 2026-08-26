@@ -5,7 +5,7 @@ Welcome to the official documentation for **FinanceFlowAPI**, a powerful financi
 - **Commodities** (gold, coal, oil, agricultural products)
 - **Government Bonds** (e.g., US, Germany, Australia)
 - **Stock Indices** (DE40, ASX200, S&P 500, etc.)
-- **Stock Tickers** (real-time prices for **511,000+ tickers** like AAPL, TSLA, GOOGL)
+- **Stock Tickers** (real-time prices for **511,000+ tickers** like AAPL, TSLA, GOOGL, plus historical candles and financial statements)
 - **Economic Indicators** (PMI, consumer credit, etc.)
 - **Financial Calendar** (key economic events)
 
@@ -18,7 +18,7 @@ Whether you're building trading platforms, market analysis tools, or financial d
 ## 🚀 Why FinanceFlowAPI?
 
 - **Comprehensive Data**: Real-time and historical datasets for commodities, bonds, stocks, and more.
-- **Affordable Pricing**: Test plan with 200 requests/month, only 5$. Paid plans start at **$25/month**.
+- **Affordable Pricing**: Test plan at $5/month (200 requests). Paid plans start at **$25/month**.
 - **Easy Integration**: Well-documented with examples in Python, JavaScript, and more.
 - **Future-Ready**: Upcoming endpoints include SEC data.
 
@@ -51,10 +51,10 @@ Whether you're building trading platforms, market analysis tools, or financial d
        },
        "data": {
            "commodity_name": "gold",
-           "current_price": 2797.16,
-           "daily_change": "10.50",
-           "daily_change_percent": "0.38%",
-           "last_updated": "2025-01-31"
+           "current_price": 4599.06,
+           "daily_change": "-59.05",
+           "daily_change_percent": "-1.27%",
+           "last_updated": "2026-08-26"
        }
    }
    ```
@@ -63,39 +63,38 @@ Whether you're building trading platforms, market analysis tools, or financial d
 
 ## 🗂️ Documentation Structure
 
-This repository includes detailed documentation for each endpoint in the `/docs` folder:
+This repository includes detailed documentation for each endpoint category in the `/docs` folder:
 
-- Commodity API: Real-time and historical data for commodities (e.g., gold, coal).
+- [Commodity API](docs/commodity-api.md): Real-time and historical data for 102 commodities (e.g., gold, coal).
+- [Government Bonds API](docs/government-bonds-api.md): Real-time and historical bond yields for 54 countries (`/bonds-spot`, `/bonds-history`).
+- [Currency API](docs/currency-api.md): Real-time exchange rates for 628 currency pairs (`/currency-spot`, `/currency-catalog`).
+- [Stock Index API](docs/index-api.md): Real-time data for 86 stock index benchmarks (`/index-spot`, `/index-catalog`).
+- [Stock Tickers API](docs/tickers-api.md): Real-time prices and catalog for 511,000+ tickers (`/ticker-spot`, `/tickers-catalog`).
+- [Stock Ticker Candles API](docs/ticker-candles-api.md): Historical daily OHLC candles for stock tickers (`/ticker-candles`).
+- [World Economic Indicators API](docs/indicators-api.md): 663 economic indicators across 131 countries (`/world-indicators`).
+- [Financial Calendar API](docs/financial_calendar_api.md): Key economic events for 83 countries (`/financial-calendar`).
+- [Income Statement API](docs/income-statement-api.md): Quarterly and annual income statements (`/ticker-income-statement`).
+- [Balance Sheet API](docs/balance-sheet-api.md): Quarterly and annual balance sheets (`/ticker-balance-sheet`).
+- [Cash Flow API](docs/cash-flow-api.md): Quarterly and annual cash flow statements (`/ticker-cash-flow`).
 
-**Planned**:
-
-- Bonds API: Real-time and historical government bond yields (`/bonds-spot`, `/bonds-history`).
-- Stock Tickers API: Real-time prices and catalog for 511,000+ tickers (`/ticker-spot`, `/tickers-catalog`).
-- Economic Indicators: Consumer credit, PMI, and more (`/world-indicators`).
-- Financial Calendar: Key economic events (`/financial-calendar`).
-
-See the official documentation for the full list.
+See the [official documentation](https://financeflowapi.com/api_documentation/) for the full endpoint list.
 
 ---
 
 ## 💰 Pricing Plans
 
-|   Plan    |   Price   | Requests/Month | Historical Data |
-|    ---    |    ---    |      ---       |      ---        | 
-| Test      | $5/month  | 200            | 365 days        |
-| Standard  | $25/month | 10,000         | 180 days        |
-| Premium   | $50/month | 100,000        | Unlimited       | 
+|   Plan    |   Price   | Requests/Month | Requests/Minute | Historical Data |
+|    ---    |    ---    |      ---       |       ---        |      ---        |
+| Test      | $5/month  | 200            | 20              | 60 days         |
+| Standard  | $25/month | 10,000         | 60              | 5 years         |
+| Premium   | $50/month | 100,000        | 120             | 20+ years       |
 
-📌 See the pricing page for details.
+📌 See the [pricing page](https://financeflowapi.com/#pricing) for details; plans and limits may change over time.
 
 ---
 
 ## 🔮 What's Next?
 
-We’re actively working on:
-
-- 📊 **Historical Candles**: OHLC data for stock tickers.
-- 📈 **Financial Statements**: Balance sheet, income statement, cash flow.
 - 🧾 **SEC Data**: Insider transactions and filings.
 
 ⭐ **Star this repository** to follow updates!
@@ -112,8 +111,8 @@ We’re actively working on:
 
 ## 🤝 Contribute
 
-We’re a growing API and value your feedback! Share your use case, suggest new endpoints, or report issues via GitHub Issues. Let us know if you’re using FinanceFlowAPI — we’d love to feature your project!
+We’re a growing API and value your feedback! Share your use case, suggest new endpoints, or report issues via GitHub Issues. Let us know if you’re using FinanceFlowAPI: we’d love to feature your project!
 
 ---
 
-**FinanceFlowAPI — Empowering fintech with real-time and historical financial data.**
+**FinanceFlowAPI: Empowering fintech with real-time and historical financial data.**

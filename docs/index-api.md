@@ -1,6 +1,6 @@
 # Stock Index Spot API - Real-Time Stock Index Data with FinanceFlowAPI
 
-The **Stock Index Spot API** from [FinanceFlowAPI](https://financeflowapi.com) provides real-time data on global stock indices, such as DE40, ASX200, and S&P 500, including price changes, regional classification, and performance trends. Essential for investors, analysts, and financial institutions, this API enables monitoring of market trends for informed investment decisions. Integrate seamless index data into your trading platforms or analytical tools.
+The **Stock Index Spot API** from [FinanceFlowAPI](https://financeflowapi.com) provides real-time data on 86 global stock index benchmarks, such as the S&P 500, DAX 40, and ASX200, including price changes, regional classification, and performance trends. Built for investors, analysts, and financial institutions, this API supports monitoring market trends for informed investment decisions. Integrate index data into your trading platforms or analytical tools.
 
 [Sign up](https://financeflowapi.com/create-account/) to get started and explore the full API at [financeflowapi.com/api_documentation](https://financeflowapi.com/api_documentation).
 
@@ -14,7 +14,7 @@ All Stock Index Spot API endpoints follow this base URL.
 
 ### 1. Supported Benchmark List
 - **Endpoint**: `/index-catalog`
-- **Description**: Retrieves a list of all available stock indices (benchmarks), such as ADX General, ASE, ASPI, and ASX200.
+- **Description**: Retrieves the list of all 86 available stock index benchmarks, including major indices like the S&P 500 (`us500`), Dow Jones (`us30`), Nasdaq 100 (`us100`), FTSE 100 (`gb100`), DAX 40 (`de40`), and Nikkei 225 (`jp225`).
 
 #### Request Parameters
 - `api_key` (string, required): Your unique API key. [Get yours](https://financeflowapi.com/create-account/).
@@ -36,9 +36,9 @@ GET https://financeflowapi.com/api/v1/index-catalog?api_key=YOUR_API_KEY
     },
     "data": [
         {"benchmark": "adx general"},
-        {"benchmark": "ase"},
-        {"benchmark": "aspi"},
-        {"benchmark": "ASX200"}
+        {"benchmark": "asx200"},
+        {"benchmark": "us500"},
+        {"benchmark": "de40"}
     ]
 }
 ```
@@ -76,21 +76,23 @@ GET https://financeflowapi.com/api/v1/index-spot?api_key=YOUR_API_KEY&benchmark=
         "benchmark": "de40",
         "country": "germany",
         "region": "europe",
-        "price": 22462,
-        "daily_change": "217",
-        "daily_change_percent": "-0.96%",
-        "monthly_change_percent": "-2.96%",
-        "yearly_change_percent": "22.85%",
-        "last_updated": "2025-03-28"
+        "price": "26361.500",
+        "daily_change": "95.36",
+        "daily_change_percent": "0.36%",
+        "monthly_change_percent": "3.94%",
+        "yearly_change_percent": "9.63%",
+        "last_updated": "2026-08-26T15:12:29"
     }
 }
 ```
 
+Note: `price` is returned as a string, not a numeric JSON value.
+
 ## Why Choose FinanceFlowAPI?
 - **Global Index Coverage**: Access data on stock indices from Europe, Asia, the Americas, and beyond.
-- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) (200 requests/month, only 5$) or upgrade to Standard ($25/month) or Premium ($50/month) for more data.
-- **Seamless Integration**: Comprehensive [documentation](https://financeflowapi.com/api_documentation/) with code samples.
-- **Future-Proof**: Upcoming endpoints include historical candles, financial statements, and SEC data.
+- **Affordable Plans**: Start with our [Test plan](https://financeflowapi.com/create-account/) ($5/month, 200 requests) or upgrade to Standard ($25/month) or Premium ($50/month) for more data.
+- **Clear Documentation**: [Documentation](https://financeflowapi.com/api_documentation/) with code samples for every endpoint.
+- **Future-Proof**: Upcoming endpoints include SEC data.
 
 ## Get Started
 1. [Sign up](https://financeflowapi.com/create-account/) to get your API key.
